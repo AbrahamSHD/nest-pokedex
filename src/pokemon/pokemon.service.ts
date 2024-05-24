@@ -68,7 +68,7 @@ export class PokemonService {
       .select('-__v')
 
     if ( allPokemons.length <= 0 ) {
-      throw new NotFoundException('No data found')
+      throw new NotFoundException('Empty DB')
     }
 
     return allPokemons
