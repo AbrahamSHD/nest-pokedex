@@ -10,6 +10,7 @@ import { PokemonModule } from './pokemon/pokemon.module';
 import { SeedModule } from './seed/seed.module';
 import { EnvConfiguration } from './config/env.config';
 import { JoiValidationSchema } from './config/joi.validation';
+import { TodoModule } from './todo/todo.module';
 
 @Module({
   imports: [
@@ -25,7 +26,8 @@ import { JoiValidationSchema } from './config/joi.validation';
     }),
     PokemonModule,
     CommonModule,
-    SeedModule
+    SeedModule,
+    TodoModule
   ],
 })
 export class AppModule {
